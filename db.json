@@ -4,7 +4,88 @@
       "id": "pragyan@gmail.com",
       "password": "mypassword",
       "firstName": "pragyan",
-      "lastname": "bhutni"
+      "mobileNumber": "9876543210"
+    },
+    {
+      "id": "OA-UKJe"
+    },
+    {
+      "id": "Sftvm9U"
+    },
+    {
+      "id": "newton@newtonflash.com",
+      "password": "aasdfas",
+      "mobileNumber": "9876543",
+      "firstName": "asdf"
+    },
+    {
+      "id": "medha@gmail.com",
+      "password": "password",
+      "mobileNumber": "98765431243",
+      "firstName": "Medha"
+    },
+    {
+      "id": "test@test.com",
+      "password": "[awewrr",
+      "mobileNumber": "9876543",
+      "firstName": "test"
+    },
+    {
+      "id": "test@gmail.com",
+      "password": "yotyitdg",
+      "mobileNumber": "987654",
+      "firstName": "asdf"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "userId": "medha@gmail.com",
+      "checkInDate": "date",
+      "checkOutDate": "date",
+      "adults": 2,
+      "children": 2,
+      "rooms": 1
+    },
+    {
+      "userId": "medha@gmail.com",
+      "checkInDate": "",
+      "checkOutDate": "",
+      "children": "1",
+      "rooms": "1",
+      "id": 2
+    },
+    {
+      "userId": "medha@gmail.com",
+      "checkInDate": "2022-07-29",
+      "checkOutDate": "2022-07-31",
+      "children": "1",
+      "rooms": "1",
+      "id": 3
+    },
+    {
+      "userId": "medha@gmail.com",
+      "checkInDate": "2022-07-29",
+      "checkOutDate": "2022-07-31",
+      "children": "1",
+      "rooms": "1",
+      "id": 4
+    },
+    {
+      "userId": "medha@gmail.com",
+      "checkInDate": "2022-07-29",
+      "checkOutDate": "2022-07-31",
+      "children": "1",
+      "rooms": "1",
+      "id": 5
+    },
+    {
+      "userId": "medha@gmail.com",
+      "checkInDate": "2022-07-29",
+      "checkOutDate": "2022-07-31",
+      "children": "1",
+      "rooms": "1",
+      "id": 6
     }
   ]
 }
