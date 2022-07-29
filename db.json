@@ -1,8 +1,10 @@
 {
   "users": [
     {
-      "id": "papu",
-      "password": "typicode"
+      "id": "pragyan@gmail.com",
+      "password": "mypassword",
+      "firstName": "pragyan",
+      "lastname": "bhutni"
     }
   ]
 }
