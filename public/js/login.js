@@ -7,11 +7,18 @@ const checkAndUpdateUserLogin = () => {
         $("#open-signup").hide();
         $("#open-login").hide();
         $("#logoutBtn").show();
+
+        $("#nonLoggedInUserBookingMsg").hide();
+        $("#bookingFormContainer").show();
+
     } else {
         $("#welcomeUserMessage").hide();
         $("#open-signup").show();
         $("#open-login").show();
-        $("#logoutBtn").hide()
+        $("#logoutBtn").hide();
+
+        $("#nonLoggedInUserBookingMsg").show();
+        $("#bookingFormContainer").hide();
     }
 }
 checkAndUpdateUserLogin();
@@ -56,7 +63,7 @@ $("#loginForm").on( "submit", function(e){
     }).done(function( data ) {
         console.log(data);
         if(data.password === password){
-            makeUserLogin(data.firstName, data.emailId)
+            makeUserLogin(data.firstName, data.id)
         } else {
             $("#loginPasswordErrorMsgBox").show();
         }

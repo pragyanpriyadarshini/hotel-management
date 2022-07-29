@@ -561,11 +561,23 @@ img{
 }
 
 
-
 #welcomeUserMessage{
     margin-top: 40px;
 }
 
-#loginPasswordErrorMsgBox{
+#loginPasswordErrorMsgBox,
+#signupErrorMsgBox,
+#bookingFormContainer,
+#succesfullBookingMsg{
     display: none;
 }
+
+#nonLoggedInUserBookingMsg{
+    background-color: rgba(240, 128, 128, .3);
+    
+}
+#nonLoggedInUserBookingMsg a{
+    color:black;
+    font-weight: 900;
+}
+

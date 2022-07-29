@@ -27,17 +27,3 @@ window.addEventListener('click', function(event){
 });
 
 
-
-window.addEventListener('click', function(event){
-    if(event.target === openSignup){
-        signup_block.classList.add('d-f');
-    }
-});
-
-
-window.addEventListener('click', function(event){
-    if(event.target === openSignup){
-        signup_block.classList.add('d-f');
-    }
-});
-
