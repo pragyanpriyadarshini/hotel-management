@@ -561,6 +561,11 @@ img{
 }
 
 
+
 #welcomeUserMessage{
     margin-top: 40px;
+}
+
+#loginPasswordErrorMsgBox{
+    display: none;
 }

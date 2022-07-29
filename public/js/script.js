@@ -26,17 +26,6 @@ window.addEventListener('click', function(event){
     }
 });
 
-window.addEventListener('click', function(event){
-    if(event.target === openLogin){
-        login_block.classList.add('d-f');
-    }
-});
-
-window.addEventListener('click', function(event){
-    if(event.target === openSignup){
-        signup_block.classList.add('d-f');
-    }
-});
 
 
 window.addEventListener('click', function(event){
@@ -46,8 +35,9 @@ window.addEventListener('click', function(event){
 });
 
 
-closeMe.addEventListener('click', function(){
-    alert();
-    signup_block.classList.remove('d-f');
-    login_block.classList.remove('d-f');
+window.addEventListener('click', function(event){
+    if(event.target === openSignup){
+        signup_block.classList.add('d-f');
+    }
 });
+

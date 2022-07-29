@@ -8,11 +8,10 @@ const checkAndUpdateUserLogin = () => {
         $("#open-login").hide();
         $("#logoutBtn").show();
     } else {
-        console.log("user login")
         $("#welcomeUserMessage").hide();
         $("#open-signup").show();
         $("#open-login").show();
-        $("#open-signup").show()
+        $("#logoutBtn").hide()
     }
 }
 checkAndUpdateUserLogin();
@@ -20,8 +19,8 @@ checkAndUpdateUserLogin();
 
 const onLogout = () => {
     $.removeCookie('isUserLoggedin', 'yes', { expires: 7, path: '/' });
-    $.removeCookie('userName', userName, { expires: 7, path: '/' });
-    $.removeCookie('userId', userId, { expires: 7, path: '/' });
+    $.removeCookie('userName',{ expires: 7, path: '/' });
+    $.removeCookie('userId', { expires: 7, path: '/' });
     location.reload();
 }
 
@@ -29,7 +28,7 @@ const makeUserLogin = (userName, userId) => {
     $.cookie('isUserLoggedin', 'yes', { expires: 7, path: '/' });
     $.cookie('userName', userName, { expires: 7, path: '/' });
     $.cookie('userId', userId, { expires: 7, path: '/' });
-    location.reload();
+    location.href = "/";
 }
 
 const submitLogin = () => {
@@ -39,3 +38,32 @@ const submitLogin = () => {
 
 // DOM Events
 $("#logoutBtn").on("click", ()=>onLogout());
+
+
+// login form
+
+$("#loginForm").on( "submit", function(e){
+    $("#loginPasswordErrorMsgBox").hide();
+    e.preventDefault();
+
+    const emailId = $("#emailId").val();
+    const password = $("#password").val();
+    
+    $.ajax({
+        url: `http://localhost:3001/users/${emailId}`,
+
+        method:"get"
+    }).done(function( data ) {
+        console.log(data);
+        if(data.password === password){
+            makeUserLogin(data.firstName, data.emailId)
+        } else {
+            $("#loginPasswordErrorMsgBox").show();
+        }
+      })
+      .fail(function() {
+        $("#loginPasswordErrorMsgBox").show();
+      })
+
+
+});
