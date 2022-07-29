@@ -1,0 +1,35 @@
+<div id="bookingComponent">
+    <div id="nonLoggedInUserBookingMsg">
+        <h2 class="container text-center pt-5 pb-5">Please <a href="/login">login</a> to book rooms</h2>
+    </div>
+    <div class="book" id="bookingFormContainer">
+        <form class = "book-form" id="bookingForm">
+            <div class = "form-item">
+                <label for = "checkin-date">Check In Date: </label>
+                <input type = "date" id = "checkInDate">
+            </div>
+            <div class = "form-item">
+                <label for = "checkout-date">Check Out Date: </label>
+                <input type = "date" id = "checkOutDate">
+            </div>
+            <div class = "form-item">
+                <label for = "adult">Adults: </label>
+                <input type = "number" min = "1" value = "1" id= "adult">
+            </div>
+            <div class = "form-item">
+                <label for = "children">Children: </label>
+                <input type = "number" min = "1" value = "1" id="children">
+            </div>
+            <div class = "form-item">
+                <label for = "rooms">Rooms: </label>
+                <input type = "number" min = "1" value = "1" id="rooms">
+            </div>
+            <div class = "form-item">
+                <input type="submit" class = "btn" value = "Book Now">
+            </div>
+        </form>
+        <div id="succesfullBookingMsg">
+            <h2 class="text-center">Your booking has been done!!!</h2>
+        </div>
+    </div>
+</div>

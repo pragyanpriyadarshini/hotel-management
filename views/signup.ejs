@@ -1,0 +1,24 @@
+<%- include('includes/head') %>
+<%- include('includes/header') %>
+    <div class="signupFormWrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 offset-md-4 pt-5 pb-5">
+                    <h3>Signup</h3>
+                    <form action="#" id="signupForm">
+                        <input class="form-control" type="text"  id="firstName" placeholder="Name" />
+                        <input class="form-control" type="email" id="emailId" placeholder="Email" />
+                        <input class="form-control" type="password" id="password" placeholder="Password" />
+                        <input class="form-control" type="tel" id="mobileNumber" placeholder="Mobile Number">
+                        <input class="btn btn-primary d-block" type="submit" value="Submit">
+                    </form>
+
+                    <div class="p-3 mb-2 bg-danger text-white" id="signupErrorMsgBox">This user does exist. Use a new email to register</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('includes/footer') %>
+
